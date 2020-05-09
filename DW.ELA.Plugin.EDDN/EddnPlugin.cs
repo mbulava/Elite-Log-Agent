@@ -44,7 +44,7 @@
 
         public IObserver<JournalEvent> GetLogObserver() => this;
 
-        public AbstractSettingsControl GetPluginSettingsControl(GlobalSettings settings) => new EddnSettingsControl();
+        public ISettingsController GetPluginSettingsControl(GlobalSettings settings) => new EddnSettingsControl();
 
         public void ReloadSettings() { /* EDDN has no configuration */ }
 

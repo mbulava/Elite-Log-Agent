@@ -49,7 +49,7 @@
 
         protected ConcurrentQueue<TEvent> EventQueue { get; } = new ConcurrentQueue<TEvent>();
 
-        public abstract AbstractSettingsControl GetPluginSettingsControl(GlobalSettings settings);
+        public abstract ISettingsController GetPluginSettingsControl(GlobalSettings settings);
 
         public abstract void FlushEvents(ICollection<TEvent> events);
 
@@ -97,7 +97,16 @@
 
         public IObserver<JournalEvent> GetLogObserver() => this;
 
-        public void Dispose() => flushTimer.Dispose();
+        public void Dispose() 
+        {
+            Dispose(true); 
+        }
+
+
+        protected virtual  void Dispose(bool a) 
+        {
+            flushTimer.Dispose();
+        }
 
         public class CommanderData
         {

@@ -88,22 +88,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>..\packages\Castle.Core.4.4.1\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Facilities.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.LoggingFacility.5.0.0\lib\net45\Castle.Facilities.Logging.dll</HintPath>
+      <HintPath>..\packages\Castle.LoggingFacility.5.0.1\lib\net45\Castle.Facilities.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Services.Logging.NLogIntegration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Core-NLog.4.4.0\lib\net45\Castle.Services.Logging.NLogIntegration.dll</HintPath>
+      <HintPath>..\packages\Castle.Core-NLog.4.4.1\lib\net45\Castle.Services.Logging.NLogIntegration.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Windsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Windsor.5.0.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <HintPath>..\packages\Castle.Windsor.5.0.1\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.6.6\lib\net45\NLog.dll</HintPath>
+      <HintPath>..\packages\NLog.4.7.0\lib\net45\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -194,6 +194,14 @@
     <ProjectReference Include="..\DW.ELA.Utility\DW.ELA.Utility.csproj">
       <Project>{93dcdb11-335d-400c-bd87-554a0c1e2cee}</Project>
       <Name>DW.ELA.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ELA.FFW461.Controls\ELA.FFW461.Controls.csproj">
+      <Project>{7C88876A-DC92-4726-8EE0-14314526D044}</Project>
+      <Name>ELA.FFW461.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ELA.Plugin.EDCC\ELA.Plugin.EDCC.csproj">
+      <Project>{029731fd-c955-4c51-94aa-6d9e188e8c5c}</Project>
+      <Name>ELA.Plugin.EDCC</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\DW.ELA.Interfaces.csproj">
       <Project>{fd518ed2-7a6e-42f7-8c90-603235c1fee6}</Project>

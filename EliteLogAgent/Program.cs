@@ -42,6 +42,10 @@
                 pluginManager.LoadPlugin("DW.ELA.Plugin.Inara");
                 pluginManager.LoadPlugin("DW.ELA.Plugin.EDDN");
                 pluginManager.LoadPlugin("DW.ELA.Plugin.EDSM");
+
+                //This is stupid.. one the next things I fix, is how plugins are loaded
+                pluginManager.LoadPlugin("ELA.Plugin.EDCC");
+
                 pluginManager.LoadEmbeddedPlugins();
 
                 var logMonitor = container.Resolve<ILogRealTimeDataSource>();

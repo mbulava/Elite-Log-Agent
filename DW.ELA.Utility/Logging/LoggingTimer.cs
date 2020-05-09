@@ -21,13 +21,19 @@
 
         public TimeSpan Elapsed => stopwatch.Elapsed;
 
-        public void Dispose()
+        protected virtual void Dispose(bool disposed)
         {
             stopwatch.Stop();
             Log.Log(LogLevel)
                 .Message("{0}", context)
                 .Property("duration", stopwatch.ElapsedMilliseconds)
                 .Write();
+
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
         }
     }
 }

@@ -22,7 +22,7 @@
         /// </summary>
         /// <param name="settings">Instance of temporary settings object held in setup session</param>
         /// <returns>Plugin settings control</returns>
-        AbstractSettingsControl GetPluginSettingsControl(GlobalSettings settings);
+        ISettingsController GetPluginSettingsControl(GlobalSettings settings);
 
         /// <summary>
         /// Callback to signal settings have changed and it's time to update

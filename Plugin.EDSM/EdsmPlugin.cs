@@ -121,7 +121,7 @@
             }
         }
 
-        public override AbstractSettingsControl GetPluginSettingsControl(GlobalSettings settings) => new MultiCmdrApiKeyControl()
+        public override ISettingsController GetPluginSettingsControl(GlobalSettings settings) => new MultiCmdrApiKeyControl()
         {
             ApiKeys = GetActualApiKeys(),
             ApiKeyValidator = this,

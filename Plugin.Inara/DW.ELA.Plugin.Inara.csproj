@@ -33,14 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MoreLinq, Version=3.2.0.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
-      <HintPath>..\packages\morelinq.3.2.0\lib\net451\MoreLinq.dll</HintPath>
+    <Reference Include="MoreLinq, Version=3.3.2.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\morelinq.3.3.2\lib\net451\MoreLinq.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.6.6\lib\net45\NLog.dll</HintPath>
+      <HintPath>..\packages\NLog.4.7.0\lib\net45\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -77,10 +77,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Controller\DW.ELA.Controller.csproj">
       <Project>{14C53350-191B-4367-BEC4-7B749E7B1EEB}</Project>
       <Name>DW.ELA.Controller</Name>
@@ -88,6 +84,10 @@
     <ProjectReference Include="..\DW.ELA.Utility\DW.ELA.Utility.csproj">
       <Project>{93dcdb11-335d-400c-bd87-554a0c1e2cee}</Project>
       <Name>DW.ELA.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ELA.FFW461.Controls\ELA.FFW461.Controls.csproj">
+      <Project>{7c88876a-dc92-4726-8ee0-14314526d044}</Project>
+      <Name>ELA.FFW461.Controls</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\DW.ELA.Interfaces.csproj">
       <Project>{fd518ed2-7a6e-42f7-8c90-603235c1fee6}</Project>

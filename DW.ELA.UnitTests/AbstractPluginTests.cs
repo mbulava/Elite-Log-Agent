@@ -60,7 +60,7 @@
                     Flushed.Add(e);
             }
 
-            public override AbstractSettingsControl GetPluginSettingsControl(GlobalSettings settings) => null;
+            public override ISettingsController GetPluginSettingsControl(GlobalSettings settings) => null;
 
             public override void ReloadSettings()
             {
